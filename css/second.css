@@ -1,0 +1,71 @@
+.secondpage {
+    padding-top: 44px;
+}
+
+    .secondpage #header {
+        background: #6cc091;
+        top: 0;
+        height: 70px;
+        line-height: 70px;
+        position: fixed;
+    }
+
+section.wrapper, article.wrapper {
+    padding: 6em 0;
+}
+
+section.wrapper header p, article.wrapper header p {
+    font-size: 1em;
+}
+
+#header a:hover{
+    color: #555;
+}
+
+header h2 + p {
+    font-size: 1.25em;
+    margin-top: -1em;
+}
+
+header p {
+    color: #bbb;
+    position: relative;
+    margin: 0 0 1.5em 0;
+}
+
+p {
+    margin: 0 0 2em 0;
+}
+
+.image {
+    border-radius: 0;
+    border: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.image.circle img {
+    margin-top: 0;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;    
+}
+
+.image.left, .image.right {
+    max-width: 100%;
+}
+
+    .image.left img, .image.right img {
+        width: 200px;
+    }
+    .image.left {
+        float: left;
+        padding: 0 1.5em 1em 0;
+        top: 0em;
+    }
+
+    .image.right {
+        float: right;
+        padding: 0 0 1em 1.5em;
+        top: 0.25em;
+    }
