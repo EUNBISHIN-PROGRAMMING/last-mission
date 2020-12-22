@@ -98,7 +98,7 @@
                     <label for="message">Message</label>
                     <textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
                 </div>
-                <ul class="actions">
+                <ul class="actions" id="submit">
                     <a href="#" class="button alt">Send Message</a>
                 </ul>
             </form>
@@ -110,7 +110,29 @@
         </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
-
+    <script>
+    const footer = document.querySelector('#footer');
+    footer.onsubmit = function () {
+      const name = document.querySelector('#name').value;
+      const email = document.querySelector('#email').value;
+      const message = document.querySelector('#message').value;
+      const submit = document.querySelector('#submit').value;
+      
+      if (!name.trim()) {
+        alert('이름을 입력해주세요.');
+        return false;
+      } else if (!email) {
+        alert('이메일을 입력해주세요.');
+        return false;
+      } else if (!message) {
+        alert('메시지를 입력해주세요.');
+        return false;
+      }
+        else if (!submit) {
+        alert('빈 칸을 채워주세요.');
+        return false;
+      }  
+    };
+    </script>
 </body>
 </html> 
